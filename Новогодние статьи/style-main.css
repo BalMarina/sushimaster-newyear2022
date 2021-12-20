@@ -13,6 +13,10 @@ body {
     padding-bottom: 100px;
 }
 
+.mainpic {
+    max-width: 100%;
+}
+
 h1 {
     width: 100%;
     margin: 20 auto;
@@ -20,15 +24,15 @@ h1 {
     font-weight: normal;
     font-size: 36px;
     line-height: 1;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     margin-top: 0.5rem;
 }
 
 h2 {
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid rgb(197, 0, 0);
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -38,7 +42,7 @@ h3 {
 .container {
     margin: 0 auto;
     background: 50px;
-    text-align: left;
+    text-align: center;
 }
 
 .logo {
@@ -81,20 +85,19 @@ h3 {
 
 .features {
     width: 70%;
-    margin: 10px auto;
-    padding: 30px;
-    background-color: #fddddd;
-    border-radius: 20px;
     max-width: 1020px;
+    margin: 30px auto;
+    background-color: #e3e4e8;
+    border-radius: 20px;
 }
 
 .features p {
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 25px;
+    margin: 25px;
     background-repeat: no-repeat;
     background-position: center top;
-    text-align: left;
+    text-align: center;
     font-size: 28px;
     line-height: 100%;
 }
