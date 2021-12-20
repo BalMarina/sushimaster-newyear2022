@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Cyberclub LEGION — опрос гостей</title>
+</head>
+
+<body>
+  <img src="logo.svg">
+  <h2>ПОМОГИ LEGION СТАТЬ ЛУЧШЕ — ПРОЙДИ НАШ ОПРОС!</h2>
+
+  <form action="index2.html" class="form" id="feedback">
+    <h4>* обязательный вопрос</h4>
+    <p>Как ты узнал о нас?*</p>
+
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="inst">
+      <span>Из Instagram</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="fb">
+      <span>Из Facebook</span>
+    </label class="custom-radio">
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="friends">
+      <span>От знакомых</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="ad">
+      <span>По рекламе</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="offline">
+      <span>Увидел вывеску</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="source" value="google">
+      <span>Гуглил клмпьютерные клубы</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required data-toggler="toggler-1" type="radio" name="source" value="yours">
+      <span>Свой вариант</span>
+    </label>
+    <div class="form-row" data-toggle="toggler-1" style="display: none;">
+      <label>
+        <input type="text" autocomplete="off">
+      </label>
+    </div>
+
+    <p>Как часто ты приходишь в LEGION?*</p>
+
+    <label class="custom-radio">
+      <input required type="radio" name="periodicity" value="one">
+      <span>Был 1 раз</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="periodicity" value="sometimes">
+      <span>Несколько раз приходил</span>
+    </label class="custom-radio">
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="periodicity" value="urregular">
+      <span>Прихожу пару раз в месяц</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="periodicity" value="regular">
+      <span>Бываю в клубе регулярно</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required data-toggler="toggler-2" type="radio" name="periodicity" value="yours">
+      <span>Свой вариант</span>
+    </label>
+    <div class="form-row" data-toggle="toggler-2" style="display: none;">
+      <label>
+        <input type="text" autocomplete="off">
+      </label>
+    </div>
+
+    <p>Что тебе нравится в нашем клубе? Можно выбрать несколько вариантов ответа:</p>
+
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="price">
+      <span>Цены</span>
+    </label>
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="pc">
+      <span>Железо</span>
+    </label>
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="ps">
+      <span>PlayStation</span>
+    </label>
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="atmosfera">
+      <span>Активности и атмосфера</span>
+    </label class="custom-checkbox">
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="community">
+      <span>Комьюнити</span>
+    </label class="custom-checkbox">
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="lounge">
+      <span>Кальяны и бар</span>
+    </label class="custom-checkbox">
+    <br>
+    <label class="custom-checkbox">
+      <input type="checkbox" name="like" value="admins">
+      <span>Админы</span>
+    </label>
+    <br>
+    <label class="custom-checkbox">
+      <input data-toggler="toggler-3" id="checkbox-yours" type="checkbox" name="like" value="yours">
+      <span>Свой вариант</span>
+    </label>
+    <div class="form-row" data-toggle="toggler-3" style="display: none;">
+      <label>
+        <input type="text" autocomplete="off">
+      </label>
+    </div>
+
+    <p>А что в клубе можно заменить, убрать или улучшить, чтобы было приятнее?*</p>
+    <div class="form-row">
+      <input type="text" id="how" name="upgrade" required autocomplete="off">
+      <label for="how">
+        Напиши развёрнутый ответ
+      </label>
+    </div>
+
+    <h3>ТЫ ОЧЕНЬ ПОМОЖЕШЬ НАМ, ЕСЛИ НЕМНОГО РАССКАЖЕШЬ О СЕБЕ</h3>
+
+    <p>Твой пол:*</p>
+    <label class="custom-radio">
+      <input required type="radio" name="gender" value="man">
+      <span>Мужской</span>
+    </label>
+    <br>
+    <label class="custom-radio">
+      <input required type="radio" name="gender" value="woman">
+      <span>Женский</span>
+    </label>
+
+    <p>Твой возраст:*</p>
+    <div class="form-row">
+      <input type="text" id="age" name="age" required autocomplete="off"><label for="age">
+        Запиши сюда
+      </label>
+    </div>
+
+    <div action="tap" class="ui-form">
+      <div><input type="submit" value="Отправить"></div>
+    </div>
+  </form>
+
+  <script type="text/javascript">
+    const els = document.querySelectorAll("input[type=radio], input[type=checkbox]");
+    function checkboxListener(e) {
+      const togglers = document.querySelectorAll(`[data-toggler]`)
+      togglers.forEach((toggler) => {
+        const toggles = document.querySelectorAll(`[data-toggle=${toggler.dataset.toggler}]`)
+        toggles.forEach(toggle => {
+          toggle.style.display = toggler.checked ? "block" : "none"
+          if (toggler.checked) {
+            toggle.querySelector('input').setAttribute("required", "required")
+          } else {
+            toggle.querySelector('input').removeAttribute("required")
+          }
+        })
+      })
+    }
+    els.forEach((el) => {
+      el.addEventListener('change', checkboxListener)
+    })
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/g-form/g-form.js"></script>
+<script type="text/javascript">
+$(function() {
+  $(".form").submit(function (event) {
+    event.preventDefault();
+ 
+    // Ссылка, которую получили на этапе публикации приложения
+    let appLink = "https://script.google.com/macros/s/AKfycbyVjOyn4bFD9lGL5DuclddSuOJk0757hVl8RnkBceGQuOMbQUlrtfCzZnLydftahiZN/exec";
+ 
+    // Сообщение при успешной отправке данных
+    let successRespond = 'Сообщение успешно отправлено. Посмотрите результат <a target="_blank" href="https://docs.google.com/spreadsheets/d/1XcTivCQL4EZJf1x2kB4UwGj5bAi0sfpx1PwtaKgOWHo/edit?usp=sharing">тут</a>';
+ 
+    // Сообщение при ошибке в отправке данных
+    let errorRespond = 'Не удалось отправить сообщение. Cвяжитесь с администратором сайта по адресу <a href="mailto:smart-landing@ya.ru">smart-landing@ya.ru</a>';
+ 
+    // Id текущей формы
+    let form = $('#' + $(this).attr('id'))[0];
+ 
+    // h2 с ответом формы
+    let formRespond = $(this).find('.g-form__title_respond');
+ 
+    // h2 с заголовком формы
+    let formTitle = $(this).find('.g-form__title_main');
+ 
+    // Блок прелоадера
+    let preloader = $(this).find('.g-form__preloader');
+ 
+    // Кнопка отправки формы
+    let submitButton = $(this).find('.g-form__button');
+ 
+ 
+    // FormData
+    let fd = new FormData(form);
+ 
+ 
+    $.ajax({
+ 
+      url: appLink,
+      type: "POST",
+      data: fd,
+      processData: false,
+      contentType: false,
+      beforeSend: function(){
+ 
+        if(fd.get('honeypot').length) {
+          return false;
+        } else {
+          fd.delete('honeypot');
+        }
+ 
+      // Показываем прелоадер
+      preloader.css('opacity', '1');
+ 
+      // Делаем неактивной кнопку отправки
+      submitButton.prop('disabled', true);
+ 
+      // валидация других полей.
+ 
+    },
+ 
+  }).done(function(res, textStatus, jqXHR) {
+ 
+    if(jqXHR.readyState === 4 && jqXHR.status === 200) {
+ 
+    // Прячем заголовок формы
+    formTitle.css({
+      'display': 'none'
+    });
+ 
+    // Прячем прелоадер
+    preloader.css('opacity', '0');
+ 
+    // Выводим ответ формы.
+    formRespond.html(successRespond).css('color', '#37b599');
+     
+    // Возвращаем активность кнопке отправки
+    submitButton.prop('disabled', false);
+ 
+      // Очищаем поля формы
+      form.reset();
+ 
+    } else {
+      formTitle.css({
+        'display': 'none'
+      });
+      formRespond.html(errorRespond).css('color', '#c64b4b');
+      preloader.css('opacity', '0');
+      setTimeout( () => {
+        formRespond.css({
+          'display': 'none'
+        });
+        formTitle.css({
+          'display': 'block'
+        });
+ 
+        submitButton.prop('disabled', false);
+      }, 5000);
+ 
+      console.log('Гугл не ответил статусом 200');
+    }
+  }).fail(function(res, textStatus, jqXHR) {
+    formTitle.css({
+      'display': 'none'
+    });
+    preloader.css('opacity', '0');
+    formRespond.html('Не удалось отправить сообщение. Cвяжитесь с администратором сайта другим способом').css('color', '#c64b4b');
+    setTimeout( () => {
+      formRespond.css({
+        'display': 'none'
+      });
+      formTitle.css({
+        'display': 'block'
+      });
+      submitButton.prop('disabled', false); 
+    }, 5000);
+ 
+    console.log('Не удалось выполнить запрос по указанному в скрипте пути');
+  }); 
+});
+}(jQuery)); 
+</script>
+</body>
