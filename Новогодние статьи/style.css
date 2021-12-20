@@ -131,8 +131,8 @@ h3 {
     padding: 30px auto;
 }
 
-.ui-form input[type="submit"] {
-    width: 50%;
+.ui-form input[type="submit"], .ui-form a {
+    display: inline-block;
     padding: 10px;
     line-height: 10px;
     background: #fddddd;
@@ -140,4 +140,7 @@ h3 {
     font-size: 21px;
     position: relative;
     border-radius: 10px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    text-decoration: none;
 }

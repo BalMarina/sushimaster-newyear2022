@@ -8,97 +8,170 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <img class="logo" src="images/Лого_rus.svg">
-        <!--         <div class="container">
-            <h3>На главную</h3>
-        </div> -->
-        <div class="balls"></div>
-    </header>
+<header class="site-header">
+    <img class="logo" src="images/Лого_rus.svg">
+    <!--         <div class="container">
+        <h3>На главную</h3>
+    </div> -->
+    <div class="balls"></div>
+</header>
 
-    <section class="features">
-        <h1>Кто ты из новогоднего стола?</h1>
-        <img src="images/pagepic/кто ты на новогоднем столе.jpg" width="640" alt="Крайне серьёзная иллюстрация"><br><br>
-        <form action="file.html" class="form" id="testnewyear">
-            <p>Новый год я буду встречать…</p><br>
-            <label>
+<section class="features">
+    <h1>Кто ты из новогоднего стола?</h1>
+    <img src="images/pagepic/кто ты на новогоднем столе.jpg" width="640" alt="Крайне серьёзная иллюстрация"><br><br>
+    <form action="#" class="form" id="testnewyear">
+        <p>Новый год я буду встречать…</p><br>
+        <label>
             <input required type="radio" name="1q" value="1">
             <span>В кругу самых близких</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="1q" value="2">
             <span>В шумной компании любимых малознакомых людей</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="1q" value="3">
             <span>В приятном уединении</span>
-          </label>
-            <br>
-            <br>
-            <p>За столом я предпочитаю…</p><br>
-            <label>
+        </label>
+        <br>
+        <br>
+        <p>За столом я предпочитаю…</p><br>
+        <label>
             <input required type="radio" name="2q" value="1">
             <span>Сидеть с краю</span>
-          </label>
-            <br>
-            <label>
-            <input required type="radio" name=21q" value="2">
+        </label>
+        <br>
+        <label>
+            <input required type="radio" name="2q" value="2">
             <span>Быть в центре внимания</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="2q" value="3">
             <span>Вставать и обниматься со всеми</span>
-          </label>
-            <br>
-            <br>
-            <p>В качестве наряда на Новый год я выберу…</p><br>
-            <label>
+        </label>
+        <br>
+        <br>
+        <p>В качестве наряда на Новый год я выберу…</p><br>
+        <label>
             <input required type="radio" name="3q" value="1">
             <span>Самую новую и опрятную одежду</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="3q" value="2">
             <span>Как можно больше блёсток</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="3q" value="3">
             <span>Пижаму. А перед кем выделываться?</span>
-          </label>
-            <br>
-            <br>
-            <p>Новогодний тост я…</p><br>
-            <label>
+        </label>
+        <br>
+        <br>
+        <p>Новогодний тост я…</p><br>
+        <label>
             <input required type="radio" name="4q" value="1">
             <span>Предпочитаю пропустить</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="4q" value="2">
             <span>Озвучу так, чтобы слышали все</span>
-          </label>
-            <br>
-            <label>
+        </label>
+        <br>
+        <label>
             <input required type="radio" name="4q" value="3">
             <span>Запишу на видео и отправлю бабушке</span>
-          </label>
-            <br>
-            <br>
-            <div action="tap" class="ui-form">
-                <div><input type="submit" value="Узнать результат"></div>
-            </div>
-        </form>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© Суши Мастер, 2021</p>
+        </label>
+        <br>
+        <br>
+        <div class="ui-form">
+            <div><input type="submit" value="Узнать результат"></div>
         </div>
-    </footer>
+    </form>
+</section>
+<script type="text/javascript">
+  {
+    const sets = [
+      {
+        '1q': [1, 3],
+        '2q': [1],
+        '3q': [],
+        '4q': [1],
+      },
+      {
+        '1q': [1, 2],
+        '2q': [3],
+        '3q': [],
+        '4q': [2, 3],
+      },
+      {
+        '1q': [],
+        '2q': [2],
+        '3q': [1],
+        '4q': [],
+      },
+      {
+        '1q': [],
+        '2q': [1],
+        '3q': [1, 3],
+        '4q': [1],
+      },
+      {
+        '1q': [1],
+        '2q': [2],
+        '3q': [],
+        '4q': [2],
+      },
+      {
+        '1q': [],
+        '2q': [1],
+        '3q': [2],
+        '4q': [1],
+      },
+      {
+        '1q': [1],
+        '2q': [],
+        '3q': [1],
+        '4q': [2, 3],
+      },
+    ]
+    const form = document.getElementById('testnewyear')
+    if (form) {
+      function checkKey (set, key, answer) {
+        console.log(set, key, answer) // todo: remove this line
+        const data = set[key]
+        if (data.length) {
+          return data.includes(+answer)
+        }
+        return true
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault()
+        const fd = new FormData(this)
+        const data = Object.fromEntries(fd.entries())
+        let setIndex = sets.findIndex(set => {
+          return Object.keys(set).every((key) => checkKey(set, key, data[key]))
+        })
+        if (setIndex === -1) {
+          setIndex = 7
+        } else {
+          setIndex = setIndex + 1
+        }
+        location.pathname = location.pathname.replace('index6.html', `index6-${setIndex}.html`)
+      })
+    }
+  }
+</script>
+<footer class="site-footer">
+    <div class="container">
+        <p>© Суши Мастер, 2021</p>
+    </div>
+</footer>
 </body>
 
 </html>
