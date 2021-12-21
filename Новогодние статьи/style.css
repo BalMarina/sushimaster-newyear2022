@@ -131,7 +131,8 @@ h3 {
     padding: 30px auto;
 }
 
-.ui-form input[type="submit"], .ui-form a {
+.ui-form input[type="submit"],
+.ui-form a {
     display: inline-block;
     padding: 10px;
     line-height: 10px;
@@ -143,4 +144,30 @@ h3 {
     border: 1px solid #000000;
     cursor: pointer;
     text-decoration: none;
+}
+
+.go {
+    border: 1px solid;
+    border-radius: 100px;
+    width: 10%;
+    background-color: #fddddd;
+    padding: 10px 5px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.back {
+    border: 1px solid;
+    border-radius: 100px;
+    width: 10%;
+    background-color: #fddddd;
+    padding: 10px 5px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bottom-nav {
+    text-align: center;
 }

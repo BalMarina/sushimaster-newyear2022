@@ -144,3 +144,12 @@ h3 {
     position: relative;
     border-radius: 10px;
 }
+
+.link {
+    color: #1a054b;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #fddddd;
+    margin: 10px;
+    padding: 5px 10px;
+}
