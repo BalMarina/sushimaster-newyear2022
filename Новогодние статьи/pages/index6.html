@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Новогодние статьи Суши Мастер</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
@@ -24,70 +24,70 @@
         <form action="#" class="form" id="testnewyear">
             <p>Новый год я буду встречать…</p><br>
             <label>
-            <input required type="radio" name="1q" value="1">
-            <span>В кругу самых близких</span>
-        </label>
+                <input required type="radio" name="1q" value="1">
+                <span>В кругу самых близких</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="1q" value="2">
-            <span>В шумной компании любимых малознакомых людей</span>
-        </label>
+                <input required type="radio" name="1q" value="2">
+                <span>В шумной компании любимых малознакомых людей</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="1q" value="3">
-            <span>В приятном уединении</span>
-        </label>
+                <input required type="radio" name="1q" value="3">
+                <span>В приятном уединении</span>
+            </label>
             <br>
             <br>
             <p>За столом я предпочитаю…</p><br>
             <label>
-            <input required type="radio" name="2q" value="1">
-            <span>Сидеть с краю</span>
-        </label>
+                <input required type="radio" name="2q" value="1">
+                <span>Сидеть с краю</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="2q" value="2">
-            <span>Быть в центре внимания</span>
-        </label>
+                <input required type="radio" name="2q" value="2">
+                <span>Быть в центре внимания</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="2q" value="3">
-            <span>Вставать и обниматься со всеми</span>
-        </label>
+                <input required type="radio" name="2q" value="3">
+                <span>Вставать и обниматься со всеми</span>
+            </label>
             <br>
             <br>
             <p>В качестве наряда на Новый год я выберу…</p><br>
             <label>
-            <input required type="radio" name="3q" value="1">
-            <span>Самую новую и опрятную одежду</span>
-        </label>
+                <input required type="radio" name="3q" value="1">
+                <span>Самую новую и опрятную одежду</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="3q" value="2">
-            <span>Как можно больше блёсток</span>
-        </label>
+                <input required type="radio" name="3q" value="2">
+                <span>Как можно больше блёсток</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="3q" value="3">
-            <span>Пижаму. А перед кем выделываться?</span>
-        </label>
+                <input required type="radio" name="3q" value="3">
+                <span>Пижаму. А перед кем выделываться?</span>
+            </label>
             <br>
             <br>
             <p>Новогодний тост я…</p><br>
             <label>
-            <input required type="radio" name="4q" value="1">
-            <span>Предпочитаю пропустить</span>
-        </label>
+                <input required type="radio" name="4q" value="1">
+                <span>Предпочитаю пропустить</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="4q" value="2">
-            <span>Озвучу так, чтобы слышали все</span>
-        </label>
+                <input required type="radio" name="4q" value="2">
+                <span>Озвучу так, чтобы слышали все</span>
+            </label>
             <br>
             <label>
-            <input required type="radio" name="4q" value="3">
-            <span>Запишу на видео и отправлю бабушке</span>
-        </label>
+                <input required type="radio" name="4q" value="3">
+                <span>Запишу на видео и отправлю бабушке</span>
+            </label>
             <br>
             <br>
             <div class="ui-form">
@@ -140,7 +140,7 @@
                 '2q': [],
                 '3q': [1],
                 '4q': [2, 3],
-            }, ]
+            },]
             const form = document.getElementById('testnewyear')
             if (form) {
                 function checkKey(set, key, answer) {
@@ -152,7 +152,7 @@
                     return true
                 }
 
-                form.addEventListener('submit', function(e) {
+                form.addEventListener('submit', function (e) {
                     e.preventDefault()
                     const fd = new FormData(this)
                     const data = Object.fromEntries(fd.entries())
